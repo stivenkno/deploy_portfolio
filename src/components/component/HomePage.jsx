@@ -9,26 +9,26 @@ import { Image } from "next/image"
 export default function Homepage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
+      <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6 fixed w-full ">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="#" className="flex items-center gap-2 text-xl font-bold" prefetch={false}>
             <BriefcaseIcon className="w-6 h-6" />
             Stiven Cano
           </Link>
           <nav className="hidden md:flex items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            <Link href="/#home" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
               Home
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            <Link href="/#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
               About
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            <Link href="/#projects" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
               Projects
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            <Link href="/#skills" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
               Skills
             </Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            <Link href="/#contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
               Contact
             </Link>
           </nav>
@@ -47,19 +47,19 @@ export default function Homepage() {
             </SheetTrigger>
             <SheetContent side="right" className="bg-primary text-primary-foreground">
               <div className="flex flex-col items-start gap-4 p-4">
-                <Link href="#" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+                <Link href="/#home" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                   Home
                 </Link>
-                <Link href="#" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+                <Link href="/#about" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                   About
                 </Link>
-                <Link href="#" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+                <Link href="/#projects" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                   Projects
                 </Link>
-                <Link href="#" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+                <Link href="/#skills" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                   Skills
                 </Link>
-                <Link href="#" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
+                <Link href="/#contact" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
                   Contact
                 </Link>
               </div>
@@ -67,7 +67,7 @@ export default function Homepage() {
           </Sheet>
         </div>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 mt-16">
         <section id="home" className="bg-primary text-primary-foreground py-12 md:py-24 lg:py-32">
           <div className="container mx-auto grid gap-6 md:grid-cols-2 items-center">
             <div className="space-y-4 text-center md:text-left">
@@ -85,7 +85,7 @@ export default function Homepage() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/placeholder.svg"
+                src="/programador.webp"
                 width={500}
                 height={500}
                 alt="Hero"
@@ -98,7 +98,7 @@ export default function Homepage() {
           <div className="container mx-auto grid gap-6 md:grid-cols-2 items-center">
             <div className="flex justify-center">
               <img
-                src="/placeholder.svg"
+                src="/programador2.png"
                 width={400}
                 height={400}
                 alt="John Doe"
@@ -108,8 +108,9 @@ export default function Homepage() {
             <div className="space-y-4 text-center md:text-left">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
               <p className="text-muted-foreground">
-                I&apos;m a full-stack web developer with over 5 years of experience in the industry. I specialize in building
-                modern, responsive, and scalable web applications using the latest technologies and best practices.
+              I&apos;m a full stack web developer passionate about building web applications. I work with technologies like React, Node.js, Express, and PostgreSQL. I love creating efficient, user-friendly solutions and enjoy collaborating with other developers.
+
+              Thanks for visiting my portfolio!
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1">
@@ -134,17 +135,17 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <section id="projects" className="bg-muted text-muted-foreground py-12 md:py-24 lg:py-32">
+        <section id="projects" className="bg-muted  py-12 md:py-24 lg:py-32">
           <div className="container mx-auto text-center">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">My Projects</h2>
+              <h2 className=" text-3xl font-bold tracking-tighter sm:text-4xl ">My Projects</h2>
               <p className="text-muted-foreground">Here are some of the projects I&apos;ve worked on.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <Card className="bg-background text-foreground">
                 <CardHeader>
                   <img
-                    src="/placeholder.svg"
+                    src="/cinemaApp.png"
                     width={400}
                     height={225}
                     alt="Project 1"
@@ -152,7 +153,7 @@ export default function Homepage() {
                   />
                 </CardHeader>
                 <CardContent className="p-4 space-y-2">
-                  <h3 className="text-lg font-semibold">Project 1</h3>
+                  <h3 className="text-lg font-semibold">Cinema App</h3>
                   <p className="text-muted-foreground">
                     A modern and responsive web application built with React, Node.js, and MongoDB.
                   </p>
@@ -171,7 +172,7 @@ export default function Homepage() {
               <Card className="bg-background text-foreground">
                 <CardHeader>
                   <img
-                    src="/placeholder.svg"
+                    src="/portalNoticias.png"
                     width={400}
                     height={225}
                     alt="Project 2"
@@ -179,7 +180,7 @@ export default function Homepage() {
                   />
                 </CardHeader>
                 <CardContent className="p-4 space-y-2">
-                  <h3 className="text-lg font-semibold">Project 2</h3>
+                  <h3 className="text-lg font-semibold">Portal Noticias</h3>
                   <p className="text-muted-foreground">
                     A modern and responsive web application built with React, Node.js, and PostgreSQL.
                   </p>
@@ -188,6 +189,7 @@ export default function Homepage() {
                       href="https://noticias-app-ten.vercel.app/"
                       className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
+                      target="_blank"
                     >
                       View Project
                     </Link>
@@ -205,7 +207,7 @@ export default function Homepage() {
                   />
                 </CardHeader>
                 <CardContent className="p-4 space-y-2">
-                  <h3 className="text-lg font-semibold">Project 3</h3>
+                  <h3 className="text-lg font-semibold">Weather App</h3>
                   <p className="text-muted-foreground">
                     A modern and responsive web application built with React, Node.js, and PostgreSQL.
                   </p>
@@ -214,6 +216,7 @@ export default function Homepage() {
                       href="https://github.com/stivenkno/asyncronous-weather--.git"
                       className="inline-flex h-8 items-center justify-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
+                      target="_blank"
                     >
                       View Project
                     </Link>
@@ -318,7 +321,7 @@ export default function Homepage() {
       </main>
       <footer className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
         <div className="container mx-auto text-center md:text-left">
-          <p className="text-sm">© 2023 John Doe. All rights reserved.</p>
+          <p className="text-sm">© 2023 Stiven Cano. All rights reserved.</p>
         </div>
       </footer>
     </div>
