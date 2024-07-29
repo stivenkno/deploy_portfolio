@@ -76,11 +76,19 @@ export default function Homepage() {
                 I&apos;m a full-stack web developer with a passion for creating beautiful and functional websites.
               </p>
               <Link
-                href="#"
+                href="https://github.com/stivenkno"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-6 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 View My Work
+              </Link>
+              <Link
+                href="/CV_StivenCanoAguirre.pdf "
+                className="ml-4 inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-6 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                prefetch={false}
+                target="_blank"
+              >
+                View CV
               </Link>
             </div>
             <div className="flex justify-center">
@@ -155,7 +163,7 @@ export default function Homepage() {
                 <CardContent className="p-4 space-y-2">
                   <h3 className="text-lg font-semibold">Cinema App</h3>
                   <p className="text-muted-foreground">
-                    A modern and responsive web application built with React, Node.js, and MongoDB.
+                    The Cinema App is a web application developed with React and Axios that allows users to explore and discover movies. Using The Movie Database (TMDb) API, the app offers a user-friendly interface to search for movies, view details, and explore different categories.
                   </p>
                   <div className="flex justify-end">
                     <Link
@@ -182,7 +190,7 @@ export default function Homepage() {
                 <CardContent className="p-4 space-y-2">
                   <h3 className="text-lg font-semibold">Portal Noticias</h3>
                   <p className="text-muted-foreground">
-                    A modern and responsive web application built with React, Node.js, and PostgreSQL.
+                    The News Portal is a web application developed with React and Redux Toolkit (RTK) designed to provide users with the latest news articles across various categories. The application features a sleek, user-friendly interface and leverages RTK for efficient state management and API handling.
                   </p>
                   <div className="flex justify-end">
                     <Link
@@ -209,7 +217,7 @@ export default function Homepage() {
                 <CardContent className="p-4 space-y-2">
                   <h3 className="text-lg font-semibold">Weather App</h3>
                   <p className="text-muted-foreground">
-                    A modern and responsive web application built with React, Node.js, and PostgreSQL.
+                  The Weather App is a simple and intuitive web application that provides real-time weather updates. By consuming a weather API, it allows users to search for current weather conditions and forecasts for any location.
                   </p>
                   <div className="flex justify-end">
                     <Link
@@ -226,37 +234,58 @@ export default function Homepage() {
             </div>
           </div>
         </section>
-        <section id="skills" className="bg-background text-foreground py-12 md:py-24 lg:py-32">
+        <section id="skills" className="bg-background py-12 md:py-24 lg:py-32">
           <div className="container mx-auto text-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">My Skills</h2>
               <p className="text-muted-foreground">Here are some of the skills I&apos;ve acquired over the years.</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-            <div className="flex flex-col items-center gap-2">
-                <CodepenIcon className="w-10 h-10" />
-                <span className="text-sm font-medium">React</span>
+              <div className="flex flex-col items-center gap-2">
+                <img src="/html.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">HTML</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <NetworkIcon className="w-10 h-10" />
-                <span className="text-sm font-medium">Node.js</span>
+                <img src="/css.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">CSS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <DatabaseIcon className="w-10 h-10" />
-                <span className="text-sm font-medium">MongoDB</span>
+                <img src="/js.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">JAVASCRIPT</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <DatabaseIcon className="w-10 h-10" />
-                <span className="text-sm font-medium">PostgreSQL</span>
+                <img src="/React.webp" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">REACT</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <GitGraphIcon className="w-10 h-10" />
-                <span className="text-sm font-medium">Git</span>
+                <img src="/tailwind.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">TAILWINDCSS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <DockIcon className="w-10 h-10" />
-                <span className="text-sm font-medium">Docker</span>
+                <img src="/nextjs.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">NEXTJS</span>
               </div>
+              <div className="flex flex-col items-center gap-2">
+                <img src="/nodejs.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">NODEJS</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <img src="/postgresql.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">POSTGRESQL</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <img src="/docker.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">DOCKER</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <img src="/git.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">GIT</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <img src="/github.png" alt="" className="w-10 h-10" />
+                <span className="text-sm font-medium">GITHUB</span>
+              </div>
+             
             </div>
           </div>
         </section>
@@ -329,6 +358,11 @@ export default function Homepage() {
 }
 
 
+
+
+
+
+
 function BriefcaseIcon(props) {
   return (
     <svg
@@ -349,141 +383,6 @@ function BriefcaseIcon(props) {
   )
 }
 
-
-function CodepenIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
-      <line x1="12" x2="12" y1="22" y2="15.5" />
-      <polyline points="22 8.5 12 15.5 2 8.5" />
-      <polyline points="2 15.5 12 8.5 22 15.5" />
-      <line x1="12" x2="12" y1="2" y2="8.5" />
-    </svg>
-  )
-}
-
-
-function DatabaseIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <ellipse cx="12" cy="5" rx="9" ry="3" />
-      <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-      <path d="M3 12A9 3 0 0 0 21 12" />
-    </svg>
-  )
-}
-
-
-function DockIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M2 8h20" />
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="M6 16h12" />
-    </svg>
-  )
-}
-
-
-function GitGraphIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="5" cy="6" r="3" />
-      <path d="M5 9v6" />
-      <circle cx="5" cy="18" r="3" />
-      <path d="M12 3v18" />
-      <circle cx="19" cy="6" r="3" />
-      <path d="M16 15.7A9 9 0 0 0 19 9" />
-    </svg>
-  )
-}
-
-
-function GithubIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-      <path d="M9 18c-4.51 2-5-2-7-2" />
-    </svg>
-  )
-}
-
-
-function LinkedinIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect width="4" height="12" x="2" y="9" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  )
-}
 
 
 function MenuIcon(props) {
@@ -508,28 +407,7 @@ function MenuIcon(props) {
 }
 
 
-function NetworkIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect x="16" y="16" width="6" height="6" rx="1" />
-      <rect x="2" y="16" width="6" height="6" rx="1" />
-      <rect x="9" y="2" width="6" height="6" rx="1" />
-      <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" />
-      <path d="M12 12V8" />
-    </svg>
-  )
-}
+
 
 
 function TwitterIcon(props) {
