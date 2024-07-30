@@ -310,6 +310,7 @@ export default function Homepage() {
                         Name
                       </label>
                       <Input
+                        name="name"
                         id="name"
                         type="text"
                         className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-primary focus:ring-primary"
@@ -320,6 +321,7 @@ export default function Homepage() {
                         Email
                       </label>
                       <Input
+                        name="email"
                         id="email"
                         type="email"
                         className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-primary focus:ring-primary"
@@ -330,6 +332,7 @@ export default function Homepage() {
                         Message
                       </label>
                       <Textarea
+                        name="message"
                         id="message"
                         className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-primary focus:ring-primary"
                         rows={5}
