@@ -1,4 +1,3 @@
-"use client"
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -9,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import Image  from "next/image"
 
 export default function Homepage() {
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6 fixed w-full shadow-lg">
@@ -34,12 +34,6 @@ export default function Homepage() {
               Contact
             </Link>
           </nav>
-          <Button
-            variant="secondary"
-            className="hidden md:inline-flex h-9 items-center justify-center rounded-md px-4 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-          >
-            Hire Me
-          </Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -341,12 +335,9 @@ export default function Homepage() {
                       />
                     </div>
                     <Button
-                      onClick={() => {
-                        alert(" Thank you for your message. I will get back to you as soon as possible.")
-                      }}
                       type="submit"
                       variant="primary"
-                      className="w-full h-10 items-center justify-center rounded-md px-4 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                      className="focus:bg-primary focus:text-white w-full h-10 items-center justify-center rounded-md px-4 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     >
                       Submit
                     </Button>
@@ -361,7 +352,7 @@ export default function Homepage() {
       </main>
       <footer className="bg-primary text-primary-foreground py-6 px-4 md:px-6">
         <div className="container mx-auto text-center md:text-left">
-          <p className="text-sm">© 2023 Stiven Cano. All rights reserved.</p>
+          <p className="text-sm">© 2024 Stiven Cano. All rights reserved.</p>
         </div>
       </footer>
     </div>
