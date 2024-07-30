@@ -4,12 +4,12 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Image } from "next/image"
+import Image  from "next/image"
 
 export default function Homepage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6 fixed w-full ">
+      <header className="bg-primary text-primary-foreground py-6 px-4 md:px-6 fixed w-full shadow-lg">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="#" className="flex items-center gap-2 text-xl font-bold" prefetch={false}>
             <BriefcaseIcon className="w-6 h-6" />
@@ -92,7 +92,7 @@ export default function Homepage() {
               </Link>
             </div>
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/programador.webp"
                 width={500}
                 height={500}
@@ -105,7 +105,7 @@ export default function Homepage() {
         <section id="about" className="bg-background text-foreground py-12 md:py-24 lg:py-32">
           <div className="container mx-auto grid gap-6 md:grid-cols-2 items-center">
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/programador2.png"
                 width={400}
                 height={400}
@@ -152,7 +152,7 @@ export default function Homepage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <Card className="bg-background text-foreground">
                 <CardHeader>
-                  <img
+                  <Image
                     src="/cinemaApp.png"
                     width={400}
                     height={225}
@@ -179,7 +179,7 @@ export default function Homepage() {
               </Card>
               <Card className="bg-background text-foreground">
                 <CardHeader>
-                  <img
+                  <Image
                     src="/portalNoticias.png"
                     width={400}
                     height={225}
@@ -206,8 +206,8 @@ export default function Homepage() {
               </Card>
               <Card className="bg-background text-foreground">
                 <CardHeader>
-                  <img
-                    src="/placeholder.svg"
+                  <Image
+                    src="/weather.png"
                     width={400}
                     height={225}
                     alt="Project 3"
@@ -231,6 +231,7 @@ export default function Homepage() {
                   </div>
                 </CardContent>
               </Card>
+              
             </div>
           </div>
         </section>
@@ -242,47 +243,47 @@ export default function Homepage() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
               <div className="flex flex-col items-center gap-2">
-                <img src="/html.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/html.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">HTML</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/css.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/css.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">CSS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/js.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/js.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">JAVASCRIPT</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/React.webp" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/React.webp" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">REACT</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/tailwind.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/tailwind.png" alt="" className="w-10 h-10" quality={100}/>
                 <span className="text-sm font-medium">TAILWINDCSS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/nextjs.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/nextjs.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">NEXTJS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/nodejs.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/nodejs.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">NODEJS</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/postgresql.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/postgresql.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">POSTGRESQL</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/docker.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/docker.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">DOCKER</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/git.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/git.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">GIT</span>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <img src="/github.png" alt="" className="w-10 h-10" />
+                <Image width={10} height={10} src="/github.png" alt="" className="w-10 h-10" quality={100} />
                 <span className="text-sm font-medium">GITHUB</span>
               </div>
              
@@ -303,9 +304,9 @@ export default function Homepage() {
                   <h3 className="text-lg font-semibold">Contact Form</h3>
                 </CardHeader>
                 <CardContent className="p-4 space-y-4">
-                  <form className="space-y-4">
+                  <form action="https://formsubmit.co/stivencano931@gmail.com" method="POST" className="space-y-4">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
+                      <label htmlFor="name" name="name" className="text-sm font-medium">
                         Name
                       </label>
                       <Input
@@ -315,7 +316,7 @@ export default function Homepage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
+                      <label htmlFor="email" name="email" className="text-sm font-medium">
                         Email
                       </label>
                       <Input
@@ -325,7 +326,7 @@ export default function Homepage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium">
+                      <label htmlFor="message" name="message" className="text-sm font-medium">
                         Message
                       </label>
                       <Textarea
@@ -341,6 +342,8 @@ export default function Homepage() {
                     >
                       Submit
                     </Button>
+                    <input type="hidden" name="_next" value="http://deployportfolio-lqci-stivenknos-projects.vercel.app/"></input>
+                    <input type="hidden" name="_captcha" value="false"></input>
                   </form>
                 </CardContent>
               </Card>
