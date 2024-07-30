@@ -306,7 +306,7 @@ export default function Homepage() {
                 <CardContent className="p-4 space-y-4">
                   <form action="https://formsubmit.co/stivencano931@gmail.com" method="POST" className="space-y-4">
                     <div className="space-y-2">
-                      <label htmlFor="name" name="name" className="text-sm font-medium">
+                      <label  name="name" className="text-sm font-medium">
                         Name
                       </label>
                       <Input
@@ -316,7 +316,7 @@ export default function Homepage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" name="email" className="text-sm font-medium">
+                      <label  name="email" className="text-sm font-medium">
                         Email
                       </label>
                       <Input
@@ -326,7 +326,7 @@ export default function Homepage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="message" name="message" className="text-sm font-medium">
+                      <label name="message" className="text-sm font-medium">
                         Message
                       </label>
                       <Textarea
