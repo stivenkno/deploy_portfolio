@@ -339,6 +339,9 @@ export default function Homepage() {
                       />
                     </div>
                     <Button
+                      onClick={() => {
+                        alert(" Thank you for your message. I will get back to you as soon as possible.")
+                      }}
                       type="submit"
                       variant="primary"
                       className="w-full h-10 items-center justify-center rounded-md px-4 text-sm font-medium shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
